@@ -63,7 +63,7 @@ public class FFT {
 		final int N = x.length;
 		Complex t2 = new Complex();
 		Complex factor = new Complex();
-		final double theta = Math.PI * (invert ? -1 : 1); 
+		final double theta = Math.PI * (invert ? 1 : -1); 
 		for (int s = 1; s < N; s <<= 1) {
 			final int j = s << 1;
 			final double delta = theta / s;

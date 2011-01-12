@@ -55,6 +55,11 @@ public class Complex {
 		return this;
 	}
 	
+	public Complex conjugate() {
+		conjugate(this, this);
+		return this;
+	}
+	
 	public double modulus() {
 		return Math.sqrt(abs2());
 	}
